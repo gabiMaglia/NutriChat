@@ -1,0 +1,80 @@
+/* Chat.module.css */
+.chatContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #252121;
+}
+
+.chatBox {
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatMessages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.chatMessage {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #ff6e0d;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: #ececec;
+  align-self: flex-start;
+}
+
+.chatInput {
+  display: flex;
+  padding: 10px;
+  background: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.chatInput button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.chatInput button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .chatBox {
+    height: 90vh;
+  }
+}
