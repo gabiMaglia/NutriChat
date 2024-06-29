@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './chat.module.css'; // Importa los estilos usando CSS Modules
+import styles from './chat.module.css'; 
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -12,6 +12,9 @@ const Chat = () => {
     }
   };
 
+
+
+  
   return (
     <div className={styles.chatContainer}>
       <div className={styles.chatBox}>
